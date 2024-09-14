@@ -1,11 +1,11 @@
-import {FilterValuesType, TaskType} from "./App";
+import {DataTaskType, FilterValuesType, TaskType} from "./App";
 import {ChangeEvent, KeyboardEvent, useState} from "react";
 import {Button} from "./Button";
 
 type PropsType = {
 	title: string
 	todolistId: string
-	tasks: TaskType[]
+	tasks: DataTaskType[]
 	removeTask: (taskId: string, todolistId: string) => void
 	changeFilter: (filter: FilterValuesType, todolistId: string) => void
 	addTask: (title: string, todolistId: string) => void
